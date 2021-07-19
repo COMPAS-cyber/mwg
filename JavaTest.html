@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+<title>
+
+</title>
+
+<script language="javascript">
+
+function saveFile(){
+
+var filename="c:\\test.txt";
+
+var objFS = new ActiveXObject("Scripting.FileSystemObject");
+
+var objFile =objFS.OpenTextFile(filename,8,true,0);
+
+objFile.write("hi");objFile.close();}
+
+</script>
+
+</head>
+
+<body onload="saveFile()">
+
+</body>
+
+</html>
+
